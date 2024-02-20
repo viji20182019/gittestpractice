@@ -1,0 +1,36 @@
+git init
+git add .
+git commit
+git remote add origin https://vijayalakshmikn0000@dev.azure.com/vijayalakshmikn0000/vg-project1/_git/test
+git push -u origin --all
+git add .\file1.txt .\file2.txt .\childcer.cer .\rootcer.cer
+git commit .\file1.txt .\file2.txt .\childcer.cer .\rootcer.cer
+git log
+
+===================
+
+Now if you want to change the remote directory means want add different project repo from Azure devops then first remove origin eisting remote repo from local VS by below command 
+
+git remote -v
+git remote remove origin
+ 
+after that you can open new application code files then init, add, commit then add new remote devops repo then push it.
+
+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
+
+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
+=====================================
+
+Then if you want make changes in Azure devops repo portal and in vs local then both should reflect in this case you create a clone in Azure Devops portal which will opne new window in VS code..
+then do changes in file from Vs local --> run below commands t push the changes to Azure devops portal
+
+
+git init
+git add .
+git commit
+git push -u origin --all
+
+
+If you have chnages in Azure devops portal & want to reflect in VS local then run below command 
+
+git pull
